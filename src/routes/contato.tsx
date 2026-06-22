@@ -176,7 +176,7 @@ function ContatoPage() {
                   <Field label="Empresa" name="empresa" type="text" placeholder="Nome da empresa" error={errors.empresa} />
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <Field label="Telefone" name="telefone" type="tel" placeholder="(11) 90000-0000" error={errors.telefone} />
+                  <Field label="Telefone" name="telefone" type="tel" placeholder="(11) 00000-0000" error={errors.telefone} />
                   <Field label="E-mail" name="email" type="email" placeholder="voce@empresa.com" error={errors.email} />
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2">
@@ -244,14 +244,11 @@ function ContatoPage() {
                 </p>
                 <p className="mt-4 text-xs uppercase tracking-wider text-muted-foreground">
                   Experiência prática em{" "}
-                  <span className="font-semibold text-foreground">Casas Bahia</span>,{" "}
-                  <span className="font-semibold text-foreground">Pão de Açúcar</span>,{" "}
-                  <span className="font-semibold text-foreground">Track&amp;Field</span> e{" "}
-                  <span className="font-semibold text-foreground">Assaí</span>.
+                  <span className="font-semibold text-foreground">Via Varejo</span>.
                 </p>
                 <ul className="mt-8 space-y-5">
-                  <ContactItem icon={Phone} label="Telefone" value={SITE.phoneDisplay} href={`tel:${SITE.phone.replace(/\D/g, "")}`} />
-                  <ContactItem icon={Mail} label="E-mail" value={SITE.email} href={`mailto:${SITE.email}`} />
+                  <ContactItem icon={Phone} label="Telefone" value={SITE.phoneDisplay} />
+                  <ContactItem icon={Mail} label="E-mail" value={SITE.email} />
                   <ContactItem icon={MessageCircle} label="WhatsApp" value="Falar agora" href={WHATSAPP_URL} external />
                   <ContactItem icon={MapPin} label="Atendimento" value="Brasil — online e presencial" />
                 </ul>

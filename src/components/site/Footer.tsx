@@ -97,12 +97,12 @@ export function Footer() {
 
         <div className="mt-8 grid gap-6 text-sm text-muted-foreground md:grid-cols-2">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <a href={`tel:${SITE.phone.replace(/\D/g, "")}`} className="inline-flex items-center gap-2 hover:text-primary">
+            <span className="inline-flex items-center gap-2">
               <Phone className="h-4 w-4" /> {SITE.phoneDisplay}
-            </a>
-            <a href={`mailto:${SITE.email}`} className="inline-flex items-center gap-2 hover:text-primary">
+            </span>
+            <span className="inline-flex items-center gap-2">
               <Mail className="h-4 w-4" /> {SITE.email}
-            </a>
+            </span>
             <a href={SITE.url} className="inline-flex items-center gap-2 hover:text-primary">
               <Globe className="h-4 w-4" /> {SITE.domain}
             </a>

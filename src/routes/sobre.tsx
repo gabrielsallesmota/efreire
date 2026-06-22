@@ -9,7 +9,7 @@ import fundadora from "@/assets/fundadora.jpg";
 export const Route = createFileRoute("/sobre")({
   head: () => {
     const title = `Sobre a Efreire | Consultoria Financeira com mais de 20 anos`;
-    const description = "Conheça a Efreire: mais de 20 anos em Finanças, Controladoria e Contabilidade em grupos como Casas Bahia, Pão de Açúcar, Track&Field e Assaí — agora apoiando PMEs.";
+    const description = "Conheça a Efreire: mais de 20 anos em Finanças, Controladoria e Contabilidade, com experiência real em Via Varejo — agora apoiando PMEs.";
     const url = `${SITE.url}/sobre`;
     return {
       meta: [
@@ -68,10 +68,7 @@ const diferenciais = [
 ];
 
 const experiencias = [
-  { icon: Building2, nome: "Grupo Casas Bahia" },
-  { icon: Briefcase, nome: "Grupo Pão de Açúcar" },
-  { icon: Landmark, nome: "Assaí Atacadista" },
-  { icon: TrendingUp, nome: "Track&Field" },
+  { icon: Building2, nome: "Via Varejo" },
 ];
 
 const publico = [
@@ -126,8 +123,8 @@ function SobrePage() {
                 </p>
                 <p>
                   A sócia fundadora, contadora com especialização em gestão financeira, possui experiência
-                  em empresas de relevância no mercado, como{" "}
-                  <span className="text-foreground">Grupo Casas Bahia, Grupo Pão de Açúcar, Track&Field e Assaí Atacadista</span>.
+                  em empresa de relevância no mercado, como{" "}
+                  <span className="text-foreground">Via Varejo</span>.
                 </p>
                 <p>
                   Além da atuação em indústrias de alto valor agregado, possui experiência em serviços de
@@ -136,7 +133,7 @@ function SobrePage() {
                 </p>
               </div>
 
-              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <div className="mt-8 grid max-w-xs gap-3">
                 {experiencias.map((exp, i) => (
                   <motion.div
                     key={exp.nome}

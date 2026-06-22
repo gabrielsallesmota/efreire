@@ -61,7 +61,7 @@ export function LeadForm() {
 
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           <Field label="WhatsApp *" error={errors.telefone?.message}>
-            <Input type="tel" placeholder="(11) 99999-9999" {...register("telefone")} />
+            <Input type="tel" placeholder="(11) 00000-0000" {...register("telefone")} />
           </Field>
           <Field label="E-mail" error={errors.email?.message}>
             <Input type="email" placeholder="seu@email.com" {...register("email")} />

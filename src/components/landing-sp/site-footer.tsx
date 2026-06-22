@@ -19,12 +19,12 @@ export function SiteFooter() {
           <h4 className="mb-3.5 text-[13px] font-bold uppercase tracking-wide text-white/70">
             Contato
           </h4>
-          <a href={`tel:${SITE.telefoneHref}`} className="mb-2.5 block text-sm text-white/50 transition-colors hover:text-lilac">
+          <span className="mb-2.5 block text-sm text-white/50">
             {SITE.telefoneDisplay}
-          </a>
-          <a href={`mailto:${SITE.email}`} className="mb-2.5 block text-sm text-white/50 transition-colors hover:text-lilac">
+          </span>
+          <span className="mb-2.5 block text-sm text-white/50">
             {SITE.email}
-          </a>
+          </span>
           <a href={whatsappLink} target="_blank" rel="noopener" className="mb-2.5 block text-sm text-white/50 transition-colors hover:text-lilac">
             WhatsApp
           </a>

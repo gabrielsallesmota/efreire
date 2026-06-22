@@ -147,7 +147,7 @@ function HomePage() {
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
         </div>
 
-        <div className="container-page pt-16 pb-20 md:pt-24 md:pb-28 lg:pt-32 lg:pb-36">
+        <div className="container-page pt-6 pb-20 md:pt-8 md:pb-28 lg:pt-10 lg:pb-36">
           <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <motion.span
@@ -241,10 +241,7 @@ function HomePage() {
                 className="mt-6 text-xs uppercase tracking-wider text-muted-foreground"
               >
                 Experiência prática em{" "}
-                <span className="font-semibold text-foreground">Grupo Casas Bahia</span>,{" "}
-                <span className="font-semibold text-foreground">Grupo Pão de Açúcar</span>,{" "}
-                <span className="font-semibold text-foreground">Track&amp;Field</span> e{" "}
-                <span className="font-semibold text-foreground">Assaí Atacadista</span>.
+                <span className="font-semibold text-foreground">Via Varejo</span>.
               </motion.p>
             </div>
 

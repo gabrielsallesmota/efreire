@@ -39,18 +39,12 @@ export function LeadSection() {
               <div className="mb-3 text-xs font-bold uppercase tracking-wide text-white/40">
                 Contato direto
               </div>
-              <a
-                href={`tel:${SITE.telefoneHref}`}
-                className="mb-2.5 block text-[15px] text-white/70 transition-colors hover:text-lilac"
-              >
+              <span className="mb-2.5 block text-[15px] text-white/70">
                 {SITE.telefoneDisplay}
-              </a>
-              <a
-                href={`mailto:${SITE.email}`}
-                className="mb-2.5 block text-[15px] text-white/70 transition-colors hover:text-lilac"
-              >
+              </span>
+              <span className="mb-2.5 block text-[15px] text-white/70">
                 {SITE.email}
-              </a>
+              </span>
             </div>
           </div>
         </Reveal>

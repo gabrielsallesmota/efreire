@@ -180,7 +180,7 @@ export const INSIGHTS: Insight[] = [
       {
         heading: "O que adaptar — e o que não copiar — de grandes grupos",
         paragraphs: [
-          "A experiência em grupos como Via Varejo mostra que os princípios viajam bem, mas os instrumentos precisam ser redesenhados para PMEs.",
+          "A experiência em Via Varejo mostra que os princípios viajam bem, mas os instrumentos precisam ser redesenhados para PMEs.",
         ],
         subsections: [
           {
