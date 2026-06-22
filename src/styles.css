@@ -1,0 +1,219 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * EFREIRE — Design System
+ * Paleta extraída do protótipo oficial:
+ *   #16143F  ink profundo
+ *   #1E1B6B  primary (indigo institucional)
+ *   #313199  primary-deep alternativo
+ *   #8679E6  accent (lavanda)
+ *   #B0A8F0  accent highlight (sobre fundo escuro)
+ *   #EDEDF3  surface
+ *   #2A2A3C  foreground
+ *
+ * Tipografia única: Plus Jakarta Sans (400–800).
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-deep: var(--primary-deep);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --shadow-soft: 0 1px 2px 0 rgb(22 20 63 / 0.04), 0 8px 24px -8px rgb(22 20 63 / 0.08);
+  --shadow-elegant: 0 10px 40px -12px rgb(22 20 63 / 0.18), 0 2px 6px -2px rgb(30 27 107 / 0.08);
+  --shadow-glow: 0 20px 60px -20px rgb(30 27 107 / 0.4);
+
+  --gradient-primary: linear-gradient(135deg, #1E1B6B 0%, #2D2A8C 100%);
+  --gradient-soft: linear-gradient(180deg, #FFFFFF 0%, #EDEDF3 100%);
+  --gradient-accent: linear-gradient(135deg, #8679E6 0%, #B0A8F0 100%);
+
+  /* Tokens da landing page /consultoria-financeira-sao-paulo — mesma paleta
+     institucional acima, com os nomes usados pelo design original da LP. */
+  --color-ink: #1E1B6B;
+  --color-ink-light: #2D2A8C;
+  --color-ink-dark: #16143F;
+  --color-brand: #8679E6;
+  --color-brand-hover: #9387EF;
+  --color-lilac: #B0A8F0;
+  --color-cream: #F8F7FF;
+  --color-muted-ink: #6B6B8A;
+  --color-line: #EEEDF8;
+  --color-whatsapp: #25D366;
+}
+
+:root {
+  --radius: 0.875rem;
+
+  --background: #FFFFFF;
+  --foreground: #2A2A3C;
+
+  --surface: #EDEDF3;
+  --card: #FFFFFF;
+  --card-foreground: #1A1830;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1830;
+
+  /* Indigo institucional */
+  --primary: #1E1B6B;
+  --primary-foreground: #FFFFFF;
+  --primary-deep: #16143F;
+
+  --secondary: #F0F0F6;
+  --secondary-foreground: #1A1830;
+
+  --muted: #F0F0F6;
+  --muted-foreground: #6B6B82;
+
+  /* Lavanda */
+  --accent: #8679E6;
+  --accent-foreground: #FFFFFF;
+  --accent-soft: rgba(134, 121, 230, 0.12);
+
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E6E6EF;
+  --input: #E2E2EC;
+  --ring: #8679E6;
+}
+
+.dark {
+  --background: #0F0E26;
+  --foreground: #ECECF4;
+  --surface: #16143F;
+  --card: #1E1B6B;
+  --card-foreground: #ECECF4;
+  --popover: #1E1B6B;
+  --popover-foreground: #ECECF4;
+  --primary: #8679E6;
+  --primary-foreground: #16143F;
+  --primary-deep: #B0A8F0;
+  --secondary: #1E1B6B;
+  --secondary-foreground: #ECECF4;
+  --muted: #1E1B6B;
+  --muted-foreground: #9B9BB5;
+  --accent: #8679E6;
+  --accent-foreground: #FFFFFF;
+  --accent-soft: rgba(134, 121, 230, 0.18);
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #8679E6;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #1A1830;
+  }
+  ::selection {
+    background: rgba(134, 121, 230, 0.35);
+    color: #16143F;
+  }
+}
+
+@utility text-balance { text-wrap: balance; }
+@utility text-pretty { text-wrap: pretty; }
+
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  max-width: 80rem;
+  @media (min-width: 768px) { padding-inline: 2rem; }
+  @media (min-width: 1280px) { padding-inline: 3rem; }
+}
+
+@utility section-y {
+  padding-block: 4rem;
+  @media (min-width: 768px) { padding-block: 6rem; }
+  @media (min-width: 1024px) { padding-block: 8rem; }
+}
+
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+@utility glass-card {
+  background: color-mix(in oklab, var(--color-card) 80%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in oklab, var(--color-border) 80%, transparent);
+}
+
+@utility hairline {
+  background-image: linear-gradient(to right, transparent, var(--color-border), transparent);
+  height: 1px;
+}
+
+/* Landing page /consultoria-financeira-sao-paulo — escopado para não afetar o resto do site */
+.landing-sp [id] {
+  scroll-margin-top: 84px;
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
