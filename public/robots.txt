@@ -20,4 +20,13 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://efreire.org/sitemap.xml
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://efreire.com.br/sitemap.xml

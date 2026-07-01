@@ -23,6 +23,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/servicos", changefreq: "monthly", priority: "0.9", lastmod: today },
           { path: "/metodologia", changefreq: "monthly", priority: "0.8", lastmod: today },
           { path: "/contato", changefreq: "monthly", priority: "0.7", lastmod: today },
+          { path: "/consultoria-financeira-sao-paulo", changefreq: "monthly", priority: "0.8", lastmod: today },
           ...INSIGHTS.map((i) => ({
             path: `/insights/${i.slug}`,
             changefreq: "monthly" as const,

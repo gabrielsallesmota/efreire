@@ -91,9 +91,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: defaultDescription },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
+      { property: "og:image", content: `${SITE.url}/og-image.jpg` },
+      { property: "og:image:width", content: "1536" },
+      { property: "og:image:height", content: "1024" },
+      { property: "og:image:alt", content: defaultTitle },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: defaultTitle },
       { name: "twitter:description", content: defaultDescription },
+      { name: "twitter:image", content: `${SITE.url}/og-image.jpg` },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -105,6 +110,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "alternate", hrefLang: "pt-BR", href: SITE.url },
       { rel: "alternate", hrefLang: "x-default", href: SITE.url },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+      { rel: "manifest", href: "/manifest.json" },
     ],
     scripts: [
       {
@@ -125,6 +134,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 "@type": "ImageObject",
                 url: `${SITE.url}/og-image.jpg`,
               },
+              knowsAbout: [
+                "Planejamento Financeiro",
+                "Consultoria Financeira e FP&A",
+                "Fluxo de Caixa e Modelagem Financeira",
+                "DRE Gerencial",
+                "Estruturação de Processos Financeiros",
+                "Compliance e Governança Financeira",
+                "Gestão Financeira para PMEs",
+              ],
               areaServed: [
                 { "@type": "City", name: "São Paulo", "@id": "https://www.wikidata.org/wiki/Q174" },
                 { "@type": "Country", name: "Brasil" },
