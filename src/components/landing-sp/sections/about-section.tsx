@@ -24,7 +24,7 @@ export function AboutSection() {
           gestões financeiras
         </h2>
         <p className="mt-3.5 max-w-[480px] text-base leading-[1.75] text-white/55">
-          A Efreire Assessoria e Serviços Especializados atua com gestão financeira de
+          A Efreire Assessoria & Estratégia Financeira atua com gestão financeira de
           pequenas e médias empresas em diversos setores, com atendimento presencial e
           remoto.
         </p>

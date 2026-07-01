@@ -2,7 +2,7 @@
 // Edite estes valores conforme as informações oficiais da empresa.
 
 export const SITE = {
-  name: "Efreire Assessoria e Serviços Especializados",
+  name: "Efreire Assessoria & Estratégia Financeira",
   shortName: "Efreire",
   domain: "efreire.com.br",
   url: "https://efreire.com.br",

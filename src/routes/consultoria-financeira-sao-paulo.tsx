@@ -6,7 +6,6 @@ import { SolutionSection } from "@/components/landing-sp/sections/solution-secti
 import { BenefitsSection } from "@/components/landing-sp/sections/benefits-section";
 import { ProcessSection } from "@/components/landing-sp/sections/process-section";
 import { AboutSection } from "@/components/landing-sp/sections/about-section";
-import { TestimonialsSection } from "@/components/landing-sp/sections/testimonials-section";
 import { CtaMid } from "@/components/landing-sp/sections/cta-mid";
 import { FaqSection } from "@/components/landing-sp/sections/faq-section";
 import { LeadSection } from "@/components/landing-sp/sections/lead-section";
@@ -91,7 +90,6 @@ function ConsultoriaFinanceiraSaoPauloPage() {
         <BenefitsSection />
         <ProcessSection />
         <AboutSection />
-        <TestimonialsSection />
         <CtaMid />
         <FaqSection />
         <LeadSection />

@@ -40,7 +40,7 @@ export function Navbar() {
       >
         <img
           src="/efreire-assessoria-e-servicos-especializados-logo-landing-sp.png"
-          alt="Efreire Assessoria e Serviços Especializados"
+          alt="Efreire Assessoria & Estratégia Financeira"
           className="h-[38px] w-auto"
         />
       </a>
