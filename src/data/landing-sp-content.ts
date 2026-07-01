@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const heroStats = [
-  { value: "+15", label: "Anos de experiência" },
+  { value: "+20", label: "Anos de experiência" },
   { value: "30", label: "Dias para resultados" },
   { value: "7", label: "Pilares de atuação" },
   { value: "100%", label: "Foco no seu negócio" },
@@ -141,7 +141,7 @@ export const steps: { num: number; title: string; text: string }[] = [
 ];
 
 export const aboutStats: { value: string; label: string }[] = [
-  { value: "+15", label: "Anos de experiência em finanças corporativas" },
+  { value: "+20", label: "Anos de experiência em finanças corporativas" },
   { value: "7", label: "Pilares de atuação integrados" },
   { value: "30d", label: "Para primeiros resultados visíveis" },
   { value: "360°", label: "Atendimento presencial e remoto" },

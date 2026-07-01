@@ -19,7 +19,7 @@ export function AboutSection() {
           Quem somos
         </div>
         <h2 className="text-[clamp(28px,3.5vw,42px)] font-extrabold leading-[1.15] tracking-[-0.6px] text-white">
-          +15 anos transformando
+          +20 anos transformando
           <br />
           gestões financeiras
         </h2>

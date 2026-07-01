@@ -1,0 +1,22 @@
+# Efreire Assessoria e Serviços Especializados
+
+> Consultoria financeira e de gestão estratégica para pequenas e médias empresas brasileiras, com foco em planejamento financeiro, fluxo de caixa, DRE gerencial, FP&A e governança.
+
+A Efreire é uma assessoria financeira fundada por uma contadora com mais de 20 anos de experiência em Finanças, Controladoria e Contabilidade, incluindo atuação prática em grandes operações de varejo e B2B. Atende sócios-diretores, CFOs, controllers e family offices de PMEs em crescimento que precisam profissionalizar a gestão financeira. Atendimento presencial em São Paulo (SP) e remoto em todo o Brasil. Diagnóstico financeiro inicial gratuito, de 30 minutos, sem compromisso.
+
+## Sobre a Empresa
+- [Quem somos](https://efreire.com.br/sobre): História, missão, valores e experiência da fundadora em grandes operações de varejo e B2B.
+- [Contato](https://efreire.com.br/contato): Formulário, telefone, e-mail e WhatsApp para agendar diagnóstico gratuito.
+
+## Serviços
+- [Serviços](https://efreire.com.br/servicos): Consultoria Financeira e FP&A, Estruturação de Processos Financeiros, Fluxo de Caixa e Modelagem Financeira, DRE Gerencial e Análises de Performance, Compliance e Governança.
+- [Metodologia](https://efreire.com.br/metodologia): As 4 etapas do trabalho — Diagnóstico, Estruturação, Implementação e Evolução — com ganhos mensuráveis em 30 a 90 dias.
+- [Landing page — Consultoria em São Paulo](https://efreire.com.br/consultoria-financeira-sao-paulo): Página de conversão focada em visibilidade de caixa em 30 dias, com FAQ e depoimentos.
+
+## Conteúdo e Insights
+- [Fluxo de caixa previsível](https://efreire.com.br/insights/fluxo-de-caixa-previsivel): Como estruturar previsibilidade de caixa em 90 dias para PMEs em crescimento.
+- [DRE gerencial que decide](https://efreire.com.br/insights/dre-gerencial-que-decide): Como transformar o DRE gerencial de relatório contábil em instrumento de decisão.
+- [Governança financeira em PME](https://efreire.com.br/insights/governanca-financeira-pme): Como adaptar práticas de governança de grandes grupos à realidade de PMEs.
+
+## Optional
+- [llms-full.txt](https://efreire.com.br/llms-full.txt): Versão expandida com FAQ completo e dados detalhados sobre a empresa.

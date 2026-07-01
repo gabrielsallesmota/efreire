@@ -157,7 +157,7 @@ function HomePage() {
                 className="eyebrow"
               >
                 <Sparkles className="h-3.5 w-3.5" />
-                Efreire Assessoria & Estratégia Financeira
+                Efreire Assessoria e Serviços Especializados
               </motion.span>
 
               <motion.h1
