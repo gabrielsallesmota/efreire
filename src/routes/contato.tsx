@@ -243,8 +243,8 @@ function ContatoPage() {
                   Uma conversa de 30 minutos, sem compromisso, para entender os principais gaps financeiros da sua empresa.
                 </p>
                 <p className="mt-4 text-xs uppercase tracking-wider text-muted-foreground">
-                  Experiência prática em{" "}
-                  <span className="font-semibold text-foreground">Via Varejo</span>.
+                  Experiência em grandes operações de{" "}
+                  <span className="font-semibold text-foreground">varejo e B2B</span>.
                 </p>
                 <ul className="mt-8 space-y-5">
                   <ContactItem icon={Phone} label="Telefone" value={SITE.phoneDisplay} />

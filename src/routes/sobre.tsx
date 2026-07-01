@@ -9,7 +9,7 @@ import fundadora from "@/assets/fundadora.jpg";
 export const Route = createFileRoute("/sobre")({
   head: () => {
     const title = `Sobre a Efreire | Consultoria Financeira com mais de 20 anos`;
-    const description = "Conheça a Efreire: mais de 20 anos em Finanças, Controladoria e Contabilidade, com experiência real em Via Varejo — agora apoiando PMEs.";
+    const description = "Conheça a Efreire: mais de 20 anos em Finanças, Controladoria e Contabilidade, com experiência real em grandes operações de varejo e B2B — agora apoiando PMEs.";
     const url = `${SITE.url}/sobre`;
     return {
       meta: [
@@ -68,7 +68,7 @@ const diferenciais = [
 ];
 
 const experiencias = [
-  { icon: Building2, nome: "Via Varejo" },
+  { icon: Building2, nome: "Varejo e B2B" },
 ];
 
 const publico = [
@@ -123,8 +123,8 @@ function SobrePage() {
                 </p>
                 <p>
                   A sócia fundadora, contadora com especialização em gestão financeira, possui experiência
-                  em empresa de relevância no mercado, como{" "}
-                  <span className="text-foreground">Via Varejo</span>.
+                  em{" "}
+                  <span className="text-foreground">grandes operações de varejo e B2B</span>.
                 </p>
                 <p>
                   Além da atuação em indústrias de alto valor agregado, possui experiência em serviços de
