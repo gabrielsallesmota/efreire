@@ -16,7 +16,7 @@ function buildWhatsAppLink(telefone: string, nome: string): string {
   const digits = telefone.replace(/\D/g, "");
   const number = digits.startsWith("55") && digits.length >= 12 ? digits : `55${digits}`;
   const msg = encodeURIComponent(
-    `Olá ${nome}, tudo bem? Aqui é da Efreire Assessoria & Estratégia Financeira. Vi que você se cadastrou no nosso formulário e gostaria de conversar sobre como podemos ajudar com a gestão financeira da sua empresa. Tem um minutinho?`,
+    `Olá ${nome}! Aqui é da Efreire Assessoria. Recebi seu contato pelo formulário e gostaria de agendar um diagnóstico financeiro gratuito. Tem disponibilidade?`,
   );
   return `https://wa.me/${number}?text=${msg}`;
 }
@@ -32,8 +32,13 @@ function formatTelegram(d: LeadInput): string {
   if (d.desafio) lines.push(`<b>Maior desafio:</b> ${d.desafio}`);
   if (d.faturamento) lines.push(`<b>Faturamento:</b> ${d.faturamento}`);
   if (d.mensagem) lines.push(`<b>Mensagem:</b> ${d.mensagem}`);
-  lines.push("", `<b>Origem:</b> ${d.origem}`, `<b>Data:</b> ${now}`);
-  lines.push("", `📱 <a href="${buildWhatsAppLink(d.telefone, d.nome)}">Responder no WhatsApp</a>`);
+  lines.push(
+    "",
+    `<b>Origem:</b> ${d.origem}`,
+    `<b>Data:</b> ${now}`,
+    "",
+    `📱 <a href="${buildWhatsAppLink(d.telefone, d.nome)}">Responder no WhatsApp</a>`,
+  );
   return lines.join("\n");
 }
 
@@ -81,9 +86,9 @@ function formatEmailHtml(d: LeadInput): string {
 
 export type SubmitResult = { ok: true; simulated: boolean; canais?: string[] };
 
-export const submitLeadFn = createServerFn({ method: "POST" }).handler(
-  async (ctx): Promise<SubmitResult> => {
-    const data = ctx.data as LeadInput;
+export const submitLeadFn = createServerFn({ method: "POST" })
+  .inputValidator((d: unknown) => d as LeadInput)
+  .handler(async ({ data }): Promise<SubmitResult> => {
 
     const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN ?? "";
     const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID ?? "";
