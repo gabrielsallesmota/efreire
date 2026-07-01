@@ -176,9 +176,9 @@ function HomePage() {
                 transition={{ duration: 0.7, delay: 0.15 }}
                 className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground"
               >
-                Sua empresa cresceu. A gestão financeira precisa acompanhar. Transformamos informações
-                financeiras dispersas em processos estruturados, indicadores confiáveis e decisões
-                orientadas por dados.
+                Sua operação cresceu. Está na hora da sua gestão financeira acompanhar esse novo momento.
+                Organizamos informações, estruturamos processos e criamos uma visão financeira clara para
+                que você tome decisões com confiança, controle e foco no crescimento.
               </motion.p>
 
               <motion.div
@@ -240,8 +240,8 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="mt-6 text-xs uppercase tracking-wider text-muted-foreground"
               >
-                Experiência prática em{" "}
-                <span className="font-semibold text-foreground">Via Varejo</span>.
+                Experiência em grandes operações de{" "}
+                <span className="font-semibold text-foreground">varejo e B2B</span>.
               </motion.p>
             </div>
 
@@ -274,7 +274,7 @@ function HomePage() {
         <div className="container-page">
           <SectionHeader
             eyebrow="Diagnóstico"
-            title={<>Quando a operação cresce, a falta de estrutura financeira aparece.</>}
+            title={<>Crescer sem uma estrutura financeira adequada pode limitar resultados e comprometer decisões.</>}
             description="Muitas empresas chegam a um ponto em que a gestão financeira não acompanha o crescimento. A consequência? Menos previsibilidade, mais retrabalho e dificuldade para planejar o futuro."
           />
 
@@ -332,7 +332,7 @@ function HomePage() {
             <SectionHeader
               eyebrow="Perspectivas"
               title={<>Insights na prática em <span className="italic text-primary">gestão financeira</span>.</>}
-              description="Análises curtas e acionáveis sobre fluxo de caixa, controladoria e governança — extraídas de mais de 20 anos de experiência corporativa."
+              description="Conhecimento aplicado para transformar a gestão financeira: análises sobre processos, fluxo de caixa, indicadores, controles e governança, construídos a partir de mais de 20 anos de experiência em grandes operações corporativas."
             />
           </div>
 

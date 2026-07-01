@@ -24,7 +24,7 @@ export const INSIGHTS: Insight[] = [
     slug: "fluxo-de-caixa-previsivel",
     category: "Finanças Estratégicas",
     title: "Fluxo de caixa previsível: o ponto de partida para escalar com segurança",
-    dek: "Por que PMEs em crescimento perdem rentabilidade quando o caixa é gerido por planilhas — e como estruturar previsibilidade em 90 dias.",
+    dek: "Por que PMEs em crescimento perdem rentabilidade quando o caixa é gerido por planilhas: como estruturar previsibilidade em 90 dias.",
     readTime: "6 min de leitura",
     publishedAt: "2026-05-12",
     intro:
@@ -144,8 +144,8 @@ export const INSIGHTS: Insight[] = [
   {
     slug: "governanca-financeira-pme",
     category: "Governança",
-    title: "Governança financeira em PMEs: o que aprender com a prática de grandes grupos",
-    dek: "Estruturas de governança que funcionam em corporações multinacionais podem ser adaptadas — e simplificadas — para empresas em crescimento.",
+    title: "Governança financeira em PMEs: aprendizados dos grandes grupos aplicados ao crescimento",
+    dek: "Práticas de governança consolidadas em grandes corporações podem ser traduzidas e adaptadas à realidade das empresas em expansão, com mais simplicidade, controle e eficiência.",
     readTime: "7 min de leitura",
     publishedAt: "2026-03-20",
     intro:
