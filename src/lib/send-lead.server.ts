@@ -12,6 +12,15 @@ export interface LeadInput {
   origem: string;
 }
 
+function buildWhatsAppLink(telefone: string, nome: string): string {
+  const digits = telefone.replace(/\D/g, "");
+  const number = digits.startsWith("55") && digits.length >= 12 ? digits : `55${digits}`;
+  const msg = encodeURIComponent(
+    `Olá ${nome}, tudo bem? Aqui é da Efreire Assessoria & Estratégia Financeira. Vi que você se cadastrou no nosso formulário e gostaria de conversar sobre como podemos ajudar com a gestão financeira da sua empresa. Tem um minutinho?`,
+  );
+  return `https://wa.me/${number}?text=${msg}`;
+}
+
 function formatTelegram(d: LeadInput): string {
   const now = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
   const lines = ["🚀 <b>Novo Lead — Efreire</b>", ""];
@@ -24,6 +33,7 @@ function formatTelegram(d: LeadInput): string {
   if (d.faturamento) lines.push(`<b>Faturamento:</b> ${d.faturamento}`);
   if (d.mensagem) lines.push(`<b>Mensagem:</b> ${d.mensagem}`);
   lines.push("", `<b>Origem:</b> ${d.origem}`, `<b>Data:</b> ${now}`);
+  lines.push("", `📱 <a href="${buildWhatsAppLink(d.telefone, d.nome)}">Responder no WhatsApp</a>`);
   return lines.join("\n");
 }
 
@@ -51,6 +61,7 @@ function formatEmailHtml(d: LeadInput): string {
         </tr>`,
     )
     .join("");
+  const waLink = buildWhatsAppLink(d.telefone, d.nome);
   return `<!DOCTYPE html>
 <html lang="pt-BR">
 <body style="font-family:sans-serif;color:#333;margin:0;padding:24px;background:#fff">
@@ -58,6 +69,11 @@ function formatEmailHtml(d: LeadInput): string {
     <h2 style="color:#1e1b6b;margin-bottom:4px">🚀 Novo Lead — Efreire</h2>
     <p style="color:#666;font-size:14px;margin:0 0 20px">Formulário recebido via ${d.origem}</p>
     <table style="border-collapse:collapse;width:100%;font-size:14px">${rows}</table>
+    <div style="margin-top:28px;text-align:center">
+      <a href="${waLink}" style="display:inline-block;background:#25D366;color:#fff;font-weight:700;font-size:15px;padding:14px 32px;border-radius:8px;text-decoration:none">
+        📱 Responder no WhatsApp
+      </a>
+    </div>
   </div>
 </body>
 </html>`;
