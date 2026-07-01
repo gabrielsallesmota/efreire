@@ -9,7 +9,7 @@ export function SiteFooter() {
     <footer className="bg-ink-dark px-[5%] pb-8 pt-13 text-white/45">
       <div className="flex flex-wrap items-start justify-between gap-10 border-b border-white/10 pb-8">
         <div>
-          <img src="/efreire-landing-sp-logo.png" alt="Efreire" className="mb-4 h-10" />
+          <img src="/efreire-assessoria-e-servicos-especializados-logo-landing-sp.png" alt="Efreire Assessoria e Serviços Especializados" className="mb-4 h-10" />
           <p className="max-w-[300px] text-[13px] leading-[1.7]">
             Efreire Assessoria e Serviços Especializados Ltda. Transformamos gestão
             financeira em crescimento sustentável.

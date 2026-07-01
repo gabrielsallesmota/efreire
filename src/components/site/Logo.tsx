@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoHorizontal from "@/assets/efreire-logo-horizontal.png";
+import logoHorizontal from "@/assets/efreire-assessoria-e-servicos-especializados-logo.png";
 import { SITE } from "@/lib/site-config";
 
 interface LogoProps {
