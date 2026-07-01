@@ -12,11 +12,11 @@ export interface LeadInput {
   origem: string;
 }
 
-function buildWhatsAppLink(telefone: string, nome: string): string {
+function buildWhatsAppLink(telefone: string): string {
   const digits = telefone.replace(/\D/g, "");
   const number = digits.startsWith("55") && digits.length >= 12 ? digits : `55${digits}`;
   const msg = encodeURIComponent(
-    `Olá ${nome}! Aqui é da Efreire Assessoria. Recebi seu contato pelo formulário e gostaria de agendar um diagnóstico financeiro gratuito. Tem disponibilidade?`,
+    `Olá!\n\nAqui é da Efreire Assessoria.\n\nRecebi seu contato pelo formulário e gostaria de agendar um diagnóstico financeiro gratuito.\n\nTem disponibilidade?`,
   );
   return `https://wa.me/${number}?text=${msg}`;
 }
@@ -37,7 +37,7 @@ function formatTelegram(d: LeadInput): string {
     `<b>Origem:</b> ${d.origem}`,
     `<b>Data:</b> ${now}`,
     "",
-    `📱 <a href="${buildWhatsAppLink(d.telefone, d.nome)}">Responder no WhatsApp</a>`,
+    `📱 <a href="${buildWhatsAppLink(d.telefone)}">Responder no WhatsApp</a>`,
   );
   return lines.join("\n");
 }
@@ -66,7 +66,7 @@ function formatEmailHtml(d: LeadInput): string {
         </tr>`,
     )
     .join("");
-  const waLink = buildWhatsAppLink(d.telefone, d.nome);
+  const waLink = buildWhatsAppLink(d.telefone);
   return `<!DOCTYPE html>
 <html lang="pt-BR">
 <body style="font-family:sans-serif;color:#333;margin:0;padding:24px;background:#fff">
